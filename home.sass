@@ -1,0 +1,87 @@
+$fontFamily: Arial,Helvetica,sans-serif;
+$zeroMargin: 0;
+$headerBg: #1abc9c;
+$navbarBg: #333;
+$navbarBgHover: #ddd;
+$sideBg: #f1f1f1;
+$mainBg: white;
+$footerBg: #ddd;
+$photoBorder: 1px solid;
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: $zeroMargin;
+    background-image: url("https://live.staticflickr.com/4395/37039906980_8aecdebc34_b.jpg");
+    font: {
+        family: $fontFamily;
+    }
+}
+.header {
+    padding: 80px;
+    text-align: center;
+    background: $headerBg;
+    color: white;
+}
+.header {
+    h1 {
+        font-size: 40px;
+    }
+}
+.navbar {
+    overflow: hidden;
+    background-color: $navbarBg;
+}
+.navbar {
+    a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+}
+.navbar {
+    a {
+        &.right {
+            float: right;
+        }
+    }
+}
+.navbar {
+    a {
+        &:hover {
+            background-color: $navbarBgHover;
+            color: black;
+        }
+    }
+}
+.side {
+    background-color: $sideBg;
+    padding: 20px;
+}
+.main {
+    background-color: $mainBg;
+    padding: 20px;
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: $footerBg;
+}
+.big-photo {
+    border: $photoBorder;
+    border-color: #e7e7e7;
+    padding: 3px;
+}
+.small-photo {
+    border: $photoBorder;
+    width: 50px;
+    height: 50px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.current {
+    opacity: 1;
+}

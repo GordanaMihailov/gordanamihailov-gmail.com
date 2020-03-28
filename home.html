@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <title>Lepote Srbije</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.small-photo').click(function() {
+                $('.current').removeClass('current');
+                $(this).addClass('current');
+
+                var src = jQuery(this).attr('src');
+                $('#big-photo img').attr('src', src);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>BORSKO JEZERO</h1>
+            <p>Website kreirala Gordana Mihailov</p>
+        </div>
+
+        <div class="navbar">
+            <a href="https://www.bor030.net/borsko-jezero" target="_blank">Borsko Jezero</a>
+            <a href="https://hoteljezero.rs/" target="_blank">Hotel Jezero</a>
+            <a href="http://www.turistickiklub.com/objekat/vertigo-city" target="_blank">Turisticki klub</a>
+            <a href="http://tobor.rs/sport-i-rekreacija/odmaraliste-savaca/" target="_blank" class="right">Sport i rekreacija</a>
+        </div>
+
+        <div class="side">
+            <p align="center">U podnožju planine Crni Vrh, na 17 kilometara od Bora nalazi se biser među srpskim jezerima – Borsko jezero. Ono je veštačka tvorevina, nastala 1959. tako što su planinski vodotoci zarobljeni branom i akomulacijom voda rečice Valja Žoni, Marecove reke i dela sliva Zlotske reke.</p>
+
+            <h3>Galerija</h3>
+            <div class="row">
+                <div id="big-photo" class="big-photo col-sm-6">
+                    <img src="slika1.jpg" alt="" style="width: 100%; height: 300px;" />
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td><img src="slika1.jpg" alt="" class="small-photo current" /></td>
+                                    <td><img src="slika2.jpg" alt="" class="small-photo" /></td>
+                                    <td><img src="slika3.jpg" alt="" class="small-photo" /></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="slika4.jpg" alt="" class="small-photo" /></td>
+                                    <td><img src="slika5.jpg" alt="" class="small-photo" /></td>
+                                    <td><img src="slika6.jpg" alt="" class="small-photo" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="main">
+            <h2>Hotel Jezero</h2>
+            <h5> Feb 6, 2020</h5>
+            <div id="heder">
+                <img src="https://hoteljezero.rs/wp-content/uploads/2018/06/Hotel-Jezero-136-1.jpg" alt="hotel jezero" width="100%" height="100%">
+            </div>
+            <p align="center">Borsko jezero zauzima površinu od 30 hektara, njegova nadmorska visina ostiže 438 metara sa koje se pruža impozantan vidik.
+                <br />Kristalno čista jezerska voda u letnjim mesecima dobija tamno zelenu boju a njen površinski sloj dosegne temperaturu od 25 stepeni Celzijusovih, što je čini izuzetno prijatnom za kupanje. Sitno razuđena i slikovita obala i priobalje sa uređenim plažama, rekreativnim i stazama za šetnju, sportskim terenima i drugim sadržajima pored odmora omogućavaju sportske, rekreativne, izletišne i kulturno-manifestacione aktivnosti, i tako čine Borsko jezero jednim od najprivlačnijih turističkih mesta u ovom delu Srbije.
+                <br />Na obali Borskog jezera izgrađene su četiri veće plaže i veći broj manjih. Postoje i tereni za košarku, fudbal, rukomet, odbojku i tenis, kao i trim staze oko celog jezera. Na Glavnoj plaži moguće je iznajmljivanje čamaca i pedalina, kao i uživanje raznih drugih sadržaja na vodi.
+                <br />Od smeštajnih kapaciteta na raspolaganju gostima su: hotel “Jezero”, Dečije odmaralište „Savača”, auto-kamp, konačište “Vertigo” , smeštaj u domaćoj radinosti u kućama i sobama, lociranim u neposrednoj blizini jezera.
+            </p>
+            <br />
+            <h2>Vise informacija</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <iframe width="100%" height="350" src="https://www.youtube.com/embed/xj1y43nD4QA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d366661.0046587916!2d21.82743996136297!3d44.11350139976594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4753fef68c31a901%3A0x7aed296d4b3d63c1!2sBorsko%20jezero!5e0!3m2!1sen!2srs!4v1581497770636!5m2!1sen!2srs" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <iframe width="100%" height="350" src="https://www.borizvazduha.rs/" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2>Februar, 2020</h2>
+        </div>
+
+</body>
+
+</html>
